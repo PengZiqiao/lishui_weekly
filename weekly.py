@@ -15,7 +15,7 @@ prieod = "{}年{}月{}日-{}月{}日".format(
 def huanbi(rate):
     """判断环比上涨或下降"""
     change = "下降" if rate < 0 else "上涨"
-    return "{}{}%".format(change, rate)
+    return "{}{}%".format(change, abs(rate))
 
 
 def detail(row):
